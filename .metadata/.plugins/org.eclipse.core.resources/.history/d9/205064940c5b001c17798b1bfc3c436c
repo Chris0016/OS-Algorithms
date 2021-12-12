@@ -1,0 +1,13 @@
+package main;
+
+import Algorithms.*;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		FCFS fifo = new FCFS();
+	}
+}

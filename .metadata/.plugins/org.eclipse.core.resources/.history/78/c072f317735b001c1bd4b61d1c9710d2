@@ -1,0 +1,33 @@
+package Algorithms;
+import main.ProcessList;
+
+public class FCFS extends SchedulingAlgorithm implements Scheduler {
+	
+	
+	public FCFS(ProcessList pList, boolean isPreEmptive) {
+		super(pList, isPreEmptive);
+		
+	}
+
+	@Override
+	public void runAlgo() {
+		Process[] holder = super.pList.sortByArrivalTime();
+		
+		int listLen = super.pList.getSize();
+		for(int i = 0; i < listLen; i++) {
+			
+			for(int j = 0; j < super.pList.getProcess(i).burstTime; j++) {
+				gar
+			}
+				
+		}
+	}
+	
+	
+
+
+	
+	
+	
+	
+}

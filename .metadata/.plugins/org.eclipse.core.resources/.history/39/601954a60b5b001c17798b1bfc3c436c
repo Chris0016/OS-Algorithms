@@ -1,0 +1,9 @@
+package Algorithms;
+
+public class GarnettTable {
+	private Process[] gTable;
+	
+	 
+	
+	
+}

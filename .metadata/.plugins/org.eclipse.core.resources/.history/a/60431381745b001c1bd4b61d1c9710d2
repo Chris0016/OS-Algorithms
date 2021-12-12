@@ -1,0 +1,36 @@
+package Algorithms;
+import main.ProcessList;
+import main.Process;
+
+public class FCFS extends SchedulingAlgorithm implements Scheduler {
+	
+	
+	public FCFS(ProcessList pList, boolean isPreEmptive) {
+		super(pList, isPreEmptive);
+		
+	}
+
+	@Override
+	public void runAlgo() {
+		Process[] holder = super.pList.sortByArrivalTime();
+		super.garnettTable = new Process[super.pList.getTotalBurstSize()];
+		int j = 0; 
+		int listLen = super.pList.getSize();
+		for(int i = 0; i < listLen; i+= j) {
+			
+			for(j = 0; j < super.pList.getProcess(i).burstTime; j++) {
+				garnettTable[i + j] = holder[i];
+			}
+			
+			
+		}
+	}
+	
+	
+
+
+	
+	
+	
+	
+}

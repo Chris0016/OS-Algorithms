@@ -1,0 +1,29 @@
+package main;
+import java.util.ArrayList;
+
+import Process;
+
+
+public class ProcessList {
+	private ArrayList<Process> pList;
+	
+	public ProcessList () {
+		pList = new ArrayList<Process>();
+	}
+	
+	
+	public void AddProcess(Process p) {
+		if (!hasProcess(p))
+			pList.add(p);
+	}
+	
+	
+	private boolean hasProcess(Process p) {
+		for(int i = 0; i < pList.size(); i++) {
+			if (pList.get(i).name == p.name)
+				return true;
+		}
+		return false;
+		
+	}
+}

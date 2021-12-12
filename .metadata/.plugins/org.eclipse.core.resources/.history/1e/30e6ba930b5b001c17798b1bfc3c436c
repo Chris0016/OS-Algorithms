@@ -1,0 +1,20 @@
+package Algorithms;
+import main.Process;
+import main.ProcessList;
+
+public class FCFS extends SchedulingAlgorithm implements Scheduler{
+	
+	
+	public FCFS(ProcessList pList, boolean isPreEmptive) {
+		super(pList, isPreEmptive);
+		
+	}
+
+	
+
+
+	
+	
+	
+	
+}

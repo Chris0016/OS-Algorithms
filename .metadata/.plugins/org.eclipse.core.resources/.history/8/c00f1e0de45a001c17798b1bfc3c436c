@@ -1,0 +1,26 @@
+package Algorithms;
+import main.Process;
+import main.ProcessList;
+
+public class FCFS implements SchedulingAlgorithm{
+	ProcessList pList;
+	
+	
+	
+	
+	
+	@Override
+	public int getAverageWaitingTime() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getAverageCompletionTime() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+	
+}

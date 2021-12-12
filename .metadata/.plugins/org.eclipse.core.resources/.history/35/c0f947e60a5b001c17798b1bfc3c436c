@@ -1,0 +1,45 @@
+package Algorithms;
+import main.Process;
+import main.ProcessList;
+
+public class FCFS extends SchedulingAlgorithm {
+	
+	
+	public FCFS(ProcessList pList, boolean isPreEmptive) {
+		super(pList, isPreEmptive);
+		
+	}
+	
+	public void setPList(ProcessList pList) {
+		this.pList = pList;
+	}
+	
+	
+	@Override
+	public void runAlgo() {
+		garnettTable =  pList.sortByArrivalTime();
+		
+	}
+	
+	
+	@Override
+	public int getAverageWaitingTime() {
+		return 0;
+	}
+
+	@Override
+	public int getAverageCompletionTime() {
+		
+		return 0;
+	}
+
+	@Override
+	public er getGarnetTable() {
+		return this.garnettTable;
+	}
+
+	
+	
+	
+	
+}

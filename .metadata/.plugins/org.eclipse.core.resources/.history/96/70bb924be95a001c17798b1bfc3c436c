@@ -1,0 +1,38 @@
+package Algorithms;
+import main.Process;
+import main.ProcessList;
+
+public class FCFS implements SchedulingAlgorithm{
+	ProcessList pList;
+	ProcessList garnettTable;
+	
+	public FCFS(ProcessList pList) {
+		this.pList = pList;
+	}
+	
+	public void setPList(ProcessList pList) {
+		this.pList = pList;
+	}
+	
+	
+	@Override
+	public int getAverageWaitingTime() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getAverageCompletionTime() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public ProcessList getGarnetTable() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+}

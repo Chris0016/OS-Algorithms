@@ -1,0 +1,9 @@
+package Algorithms;
+
+public interface SchedulingAlgorithm {
+
+	
+	public int getAverageWaitingTime();
+
+	public int getAverageCompletionTime();
+}

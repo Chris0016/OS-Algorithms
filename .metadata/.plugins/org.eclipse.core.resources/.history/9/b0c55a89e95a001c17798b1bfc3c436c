@@ -1,0 +1,13 @@
+package Algorithms;
+
+import main.ProcessList;
+
+public interface SchedulingAlgorithm {
+
+	
+	public int getAverageWaitingTime();
+
+	public int getAverageCompletionTime();
+	
+	public ProcessList getGarnetTable();
+}

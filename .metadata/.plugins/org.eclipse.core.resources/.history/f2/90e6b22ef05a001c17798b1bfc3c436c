@@ -1,0 +1,14 @@
+package Algorithms;
+
+import main.Process;
+import main.ProcessList;
+
+public class SchedulingAlgorithm {
+
+	ProcessList pList;
+	Process[] garnettTable;
+	int avgWaitTime;
+	int avgCompletionTime;
+	
+	
+}

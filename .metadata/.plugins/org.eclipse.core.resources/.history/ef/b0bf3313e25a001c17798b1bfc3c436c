@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+
+public class ProcessList {
+	ArrayList<Process> pList;
+	
+	public ProcessList () {
+		pList = new ArrayList<Process>();
+	
+	}
+}

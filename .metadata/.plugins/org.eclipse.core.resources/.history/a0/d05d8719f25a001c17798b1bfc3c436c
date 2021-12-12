@@ -1,0 +1,50 @@
+package Algorithms;
+
+import main.Process;
+import main.ProcessList;
+
+public class SchedulingAlgorithm {
+
+	ProcessList pList;
+	Process[] garnettTable;
+	int avgWaitTime;
+	int avgCompletionTime;
+	boolean isPreEmptive;
+	
+	
+	public SchedulingAlgorithm(ProcessList pList, boolean isPreEmptive) {
+		this.pList = pList;
+		this.isPreEmptive = isPreEmptive;
+	}
+	
+	
+	
+	public void calcAvgWaitTime() {
+		int size = garnettTable.length;
+		int currWait = 0;
+	
+		for(int i = 0; i < size; i++) {
+			
+		}
+		
+	}
+	
+	public  void printGarnettTable() {
+		int size = garnettTable.length;
+		for(int i = 0; i < size; i++) {
+			System.out.println( i + " : " + garnettTable[i]);
+		}
+	}
+	 
+	 public void printProcessList() {
+		 System.out.println("Process   |  Burst Size | Arrival Time | Priority ");
+		 for(Process p : garnettTable) {
+			 System.out.println("   " + p.name 
+					 + " | " + p.burstTime 
+					 + " | " + p.arrivalTime
+					 + " | " + p.priority
+					 + "\n");
+			 
+		 }
+	 }
+}

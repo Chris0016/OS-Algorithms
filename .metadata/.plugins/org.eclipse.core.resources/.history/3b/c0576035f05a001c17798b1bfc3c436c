@@ -1,0 +1,25 @@
+package Algorithms;
+
+import main.Process;
+import main.ProcessList;
+
+public class SchedulingAlgorithm {
+
+	ProcessList pList;
+	Process[] garnettTable;
+	int avgWaitTime;
+	int avgCompletionTime;
+	
+	public SchedulingAlgorithm(ProcessList pList) {
+		this.pList = pList;
+	}
+	
+	
+	
+	void printGarnettTable() {
+		int size = garnettTable.length;
+		for(int i = 0; i < size; i++) {
+			System.out.println( i + " : " + garnettTable[i]);
+		}
+	}
+}

@@ -1,0 +1,53 @@
+package main;
+import java.util.ArrayList;
+
+
+public class ProcessList {
+	private Process[]  pList;
+	
+	private int size;
+	
+	public ProcessList (int size) {
+		pList = new Process[size]; 
+		this.size = size;
+	}
+	
+	
+	public ProcessList sortByArrivalTime() {
+		Process[] temp = pList.clone();
+		
+		Process smallest;
+		
+		for(int i = 0; i < size -1; i++) {
+			smallest = temp[i];
+			
+			for(int j = i + 1 ; j < size; j++) {
+				if (smallest.arrivalTime >  temp[j].arrivalTime)
+					swap(temp, i , j);
+			}
+		}
+		
+	}
+	
+	 void swap(Process[] arr, int i, int j)
+	{
+	    Process temp = arr[i];
+	    arr[i] = arr[j];
+	    arr[j] = temp;
+	}
+	
+
+	
+	
+	private boolean hasProcess(Process p) {
+		for(int i = 0; i < size i++) {
+			if (pList[i].name == p.name)
+				return true;
+		}
+		return false;
+		
+	}
+	
+	
+	
+}
