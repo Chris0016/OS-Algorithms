@@ -5,14 +5,14 @@ import main.Process;
 public class SJF extends SchedulingAlgorithm implements Scheduler {
 	
 	
-	public SJF(ProcessList pList, boolean isPreEmptive) {
+	public FCFS(ProcessList pList, boolean isPreEmptive) {
 		super(pList, isPreEmptive);
 		
 	}
 
 	@Override
 	public void runAlgo() {
-		Process[] holder = super.pList.sortByBurstTime();
+		Process[] holder = super.pList.sortByArrivalTime();
 		super.garnettTable = new Process[super.pList.getTotalBurstSize()];
 		int j, count;
 		j = count = 0;
@@ -30,5 +30,4 @@ public class SJF extends SchedulingAlgorithm implements Scheduler {
 			count++;
 		}
 	}
-}
 	

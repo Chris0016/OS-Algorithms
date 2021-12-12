@@ -64,7 +64,7 @@ public class ProcessList {
 		System.out.println();
 	}
 	
-	public Process[] sortByBurstTime() {
+	public Process[] sortBySize() {
 		Process[] temp = pList.clone();
 		
 		Process smallest;

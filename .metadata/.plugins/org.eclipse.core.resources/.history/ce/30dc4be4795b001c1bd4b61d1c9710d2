@@ -12,7 +12,7 @@ public class SJF extends SchedulingAlgorithm implements Scheduler {
 
 	@Override
 	public void runAlgo() {
-		Process[] holder = super.pList.sortByBurstTime();
+		Process[] holder = super.pList.sortByBurstSize();
 		super.garnettTable = new Process[super.pList.getTotalBurstSize()];
 		int j, count;
 		j = count = 0;
@@ -30,5 +30,4 @@ public class SJF extends SchedulingAlgorithm implements Scheduler {
 			count++;
 		}
 	}
-}
 	

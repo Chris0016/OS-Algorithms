@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		int[] arrivalTimes =  {1, 4 , 3, 2, 0 };
-		int[] burstSizes =     {1, 6, 3, 2, 4 };
+		int[] burstSizes =     {2, 2, 3, 2, 2 };
 		int[] names =          {0, 1, 2, 3, 4 };
 		int[] priorities =      {1, 2, 3, 4, 5 };
 		int size  = 5;

@@ -30,5 +30,4 @@ public class SJF extends SchedulingAlgorithm implements Scheduler {
 			count++;
 		}
 	}
-}
 	
